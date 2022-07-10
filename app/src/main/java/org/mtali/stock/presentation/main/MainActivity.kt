@@ -1,4 +1,4 @@
-package org.mtali.stock
+package org.mtali.stock.presentation.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import org.mtali.stock.ui.theme.StockTheme
+import org.mtali.stock.app.theme.StockTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

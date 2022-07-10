@@ -1,4 +1,4 @@
-package org.mtali.stock.ui.theme
+package org.mtali.stock.app.theme
 
 import androidx.compose.ui.graphics.Color
 

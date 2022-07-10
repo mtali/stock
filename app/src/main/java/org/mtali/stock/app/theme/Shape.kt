@@ -1,4 +1,4 @@
-package org.mtali.stock.ui.theme
+package org.mtali.stock.app.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
