@@ -86,7 +86,15 @@ dependencies {
     // Dagger - Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodel_version"
+
+    // Compose - Hilt
+    def hilt_navigation_compose_version = "1.0.0"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_navigation_compose_version"
+
+    // OK Http
+    implementation platform("com.squareup.okhttp3:okhttp-bom:4.10.0")
+    implementation "com.squareup.okhttp3:logging-interceptor"
+
 
     // Room
     implementation "androidx.room:room-runtime:$room_version"
