@@ -6,8 +6,10 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import org.mtali.stock.data.csv.CSVParser
 import org.mtali.stock.data.csv.CompanyListingsParser
+import org.mtali.stock.data.csv.IntradayInfoParser
 import org.mtali.stock.data.repository.StockRepositoryImpl
 import org.mtali.stock.domain.model.CompanyListing
+import org.mtali.stock.domain.model.IntradayInfo
 import org.mtali.stock.domain.repository.StockRepository
 import javax.inject.Singleton
 
@@ -21,5 +23,10 @@ abstract class RepositoryModule {
 
     @Binds
     @Singleton
+    abstract fun bindsIntradayInfoParser(parser: IntradayInfoParser): CSVParser<IntradayInfo>
+
+    @Binds
+    @Singleton
     abstract fun bindsStockRepository(repo: StockRepositoryImpl): StockRepository
+
 }

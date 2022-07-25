@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.DestinationsNavHost
 import dagger.hilt.android.AndroidEntryPoint
 import org.mtali.stock.app.theme.StockTheme
-import org.mtali.stock.presentation.company.list.views.NavGraphs
+import org.mtali.stock.presentation.company.NavGraphs
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

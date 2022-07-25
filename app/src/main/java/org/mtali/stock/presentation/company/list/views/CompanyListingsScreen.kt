@@ -17,6 +17,7 @@ import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
+import org.mtali.stock.presentation.company.destinations.CompanyInfoScreenDestination
 import org.mtali.stock.presentation.company.list.CompanyListingEvent
 import org.mtali.stock.presentation.company.list.CompanyListingsViewModel
 
@@ -51,12 +52,16 @@ fun CompanyListingsScreen(
             onRefresh = { viewModel.onEvent(CompanyListingEvent.Refresh) }) {
             LazyColumn(modifier = Modifier.fillMaxSize()) {
                 items(state.companies.size) { i ->
+                    val company = state.companies[i]
                     CompanyItem(
-                        company = state.companies[i],
+                        company = company,
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                // TODO: Navigate to details screeb
+                                navigator.navigate(
+                                    CompanyInfoScreenDestination(company.symbol)
+                                )
+
                             }
                             .padding(16.dp)
                     )
