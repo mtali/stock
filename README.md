@@ -24,6 +24,15 @@ Clean architectire + Repository Pattern
 <img src="docs/CleanArchitecture.png" width="25%" height="25%"/>
 
 
+## Screenshots
+
+<p align="center">
+<img src="docs/Home.jpeg" width="25%" height="25%"/>
+
+<img src="docs/Detail.jpeg" width="25%" height="25%"/>
+
+</p>
+
 
 
 ## Language
