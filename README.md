@@ -27,9 +27,9 @@ Clean architectire + Repository Pattern
 ## Screenshots
 
 <p align="center">
-<img src="docs/Home.jpeg" width="25%" height="25%"/>
+<img src="docs/Home.png" width="25%" height="25%"/>
 
-<img src="docs/Detail.jpeg" width="25%" height="25%"/>
+<img src="docs/Detail.png" width="25%" height="25%"/>
 
 </p>
 
