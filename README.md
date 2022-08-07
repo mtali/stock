@@ -12,7 +12,7 @@ A stock market app to browse a list of active or delisted US stocks and ETFs, th
 
 ## Features
 - List of company listings using [alphavantage API](https://www.alphavantage.co/)
-- Ability to search compan listings
+- Ability to search company listings
 - Offline caching 
 - Show company details i.e. Graph (Custom Composable). See attached images
 
